@@ -20,6 +20,9 @@
     "doctrine/common": {
         "version": "3.3.0"
     },
+    "doctrine/data-fixtures": {
+        "version": "1.5.3"
+    },
     "doctrine/dbal": {
         "version": "3.3.6"
     },
@@ -38,6 +41,18 @@
             "./config/packages/doctrine.yaml",
             "./src/Entity/.gitignore",
             "./src/Repository/.gitignore"
+        ]
+    },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "3.0",
+            "ref": "1f5514cfa15b947298df4d771e694e578d4c204d"
+        },
+        "files": [
+            "./src/DataFixtures/AppFixtures.php"
         ]
     },
     "doctrine/doctrine-migrations-bundle": {
@@ -77,6 +92,19 @@
     "doctrine/sql-formatter": {
         "version": "1.1.2"
     },
+    "easycorp/easyadmin-bundle": {
+        "version": "2.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.0",
+            "ref": "0a51040a43c6f2172a3a0135cd15daf2043905d7"
+        },
+        "files": [
+            "./config/packages/easy_admin.yaml",
+            "./config/routes/easy_admin.yaml"
+        ]
+    },
     "egulias/email-validator": {
         "version": "3.1.2"
     },
@@ -91,6 +119,9 @@
     },
     "nikic/php-parser": {
         "version": "v4.13.2"
+    },
+    "pagerfanta/pagerfanta": {
+        "version": "v2.0.1"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -130,6 +161,12 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "stripe/stripe-php": {
+        "version": "v8.1.0"
+    },
+    "swiftmailer/swiftmailer": {
+        "version": "v6.3.0"
     },
     "symfony/amqp-messenger": {
         "version": "v5.4.5"
@@ -411,6 +448,20 @@
     },
     "symfony/string": {
         "version": "v5.4.8"
+    },
+    "symfony/swiftmailer-bundle": {
+        "version": "3.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.5",
+            "ref": "f0b2fccdca2dfd97dc2fd5ad216d5e27c4f895ac"
+        },
+        "files": [
+            "./config/packages/dev/swiftmailer.yaml",
+            "./config/packages/swiftmailer.yaml",
+            "./config/packages/test/swiftmailer.yaml"
+        ]
     },
     "symfony/translation": {
         "version": "5.4",

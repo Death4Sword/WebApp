@@ -14,5 +14,12 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
+    },
+    "dependencies": {
+        "-": "^0.0.1",
+        "@babel/preset-react": "^7.0.0",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "react-router-dom": "^6.3.0"
     }
 }
