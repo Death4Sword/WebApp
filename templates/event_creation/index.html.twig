@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création d'évènements{% endblock %}
+
+{% block body %}
+	<h1>Création d'évènements</h1>
+
+	<div class="container">
+		{{ form_start(formEvent) }}
+		{{ form_row(formEvent.title) }}
+		{{ form_row(formEvent.description) }}
+
+		<button type="submit" class="btn btn-primary">Créer un évent</button>
+		{{ form_end(formEvent) }}
+
+	</div>
+{% endblock %}
