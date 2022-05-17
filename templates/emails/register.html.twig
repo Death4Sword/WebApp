@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+	<tr>
+		<td>Prénom</td>
+		<td>{{ user.username }}</td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td>{{ user.email }}</td>
+	</tr>
+</table>
+
+{% for contenu in app.flashes('success') %}
+	<div class="col-md-5 mx-auto alert alert-success text-center">
+		{{ user }}
+	</div>
+{% endfor %}

@@ -38,12 +38,13 @@
 							<li class="nav-item">
 								<a class="nav-link" href="">Créer un évent</a>
 							</li>
+
 						{% else %}
 							<li class="nav-item">
-								<a class="nav-link" href="">Créer un évent</a>
+								<a class="nav-link" href="{{ path('app_registration') }}">Créer un évent</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="">Se connecter</a>
+								<a class="nav-link" href="{{ path('app_login') }}">Se connecter</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="">Liste des évènements</a>
